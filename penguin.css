@@ -1,0 +1,491 @@
+
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+}
+.row{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+   }
+
+[ class *='col-']{
+     padding: 15px; 
+    width: 100%;
+    flex-wrap: wrap;
+
+}
+
+ @media screen and (max-width:620px){
+
+ .list{
+    display: none !important;
+  }
+  .ham{
+    display: block;
+  }
+  .search{
+    position: relative;
+    top: 38px;
+    left: 100px;
+  }
+
+
+} 
+ 
+@media screen and (min-width:620px ) {
+    .col-md-1{ flex: 0 0 8.3333%; }
+    .col-md-2{ flex: 0 0 16.6667%; }
+    .col-md-3{ flex: 0 0 25%;}
+    .col-md-4{ flex: 0 0 33.3333%; }
+    .col-md-5{ flex: 0 0 41.6667%; }
+    .col-md-6{ flex: 0 0 50%;}
+    .col-md-7{ flex: 0 0 58.3333%; }
+    .col-md-8{ flex: 0 0 75; }
+    .col-md-10{ flex: 0 0 83.3333%;}
+    .col-md-11{ flex: 0 0 91.6667%;}
+    .col-md-12{ flex: 0 0 100%; }
+    /* .container-2{ max-width: 540px;}  */
+.ham{
+    display: none;
+}
+}
+@media screen and (min-width:768px ) {
+    .col-lg-1{ flex: 0 0 8.3333%;}
+    .col-lg-2{ flex: 0 0 16.6667%;}
+    .col-lg-3{ flex: 0 0 25%;}
+    .col-lg-4{ flex: 0 0 33.3333%;}
+    .col-lg-5{ flex: 0 0 41.6667%;}
+    .col-lg-6{ flex: 0 0 50%;}
+    .col-lg-7{ flex: 0 0 58.3333%;}
+    .col-lg-8{ flex: 0 0 75;}
+    .col-lg-10{ flex: 0 0 83.3333%;}
+    .col-lg-11{ flex: 0 0 91.6667%;}
+    .col-lg-12{ flex: 0 0 100%;}
+    /* .container-2{ max-width: 740px;} */
+    .header{
+        position: -webkit-sticky;
+        position: sticky !important;
+        top: 0;
+        overflow: hidden;
+}
+.ham{
+    display: none;
+}
+
+}
+.navbar{
+    list-style: none;
+    padding: 30px;
+    margin: -10px 12px;
+    
+}
+ .navitem{
+    float: right;
+} 
+nav ul>li>a{
+    text-decoration: none;
+    padding: 10px;
+    color: black;
+    font-size: 18px;
+}
+.list{
+    display: inline-flex;
+    margin-right: 30px;
+    background-color: rgb(247, 243, 243);
+}
+nav ul>li>a:hover{
+    color: yellow;
+    transition: all 1s;
+}
+.container-1{
+    display: block;
+    background-color: rgb(247, 243, 243);
+    position: relative;
+}
+ .img1{
+    width: 100%;
+   
+}
+.ham-menu{
+    width: 40px;
+    height: 40px;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    padding: 8px;
+    justify-content: space-between;
+    cursor: pointer;
+} 
+.ham-menu > div {
+    background-color: white;
+    height: 4px;
+
+}
+.nav-ham{
+      width: 200px; 
+    background-color: gray;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+.hide{
+    display: none;
+}
+.nav-ham ul li>a{
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+}
+.ham-item{
+   list-style: none;
+
+}
+.ham-item1{
+/* border-bottom: 2px solid white; */
+
+}
+
+.progress{
+    margin-top: 30px;
+    border-style: double;
+    border-color: rgb(179, 177, 177);
+    text-align: center;
+    padding: 15px;
+     
+}
+
+.container-2 {  
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+} 
+.material-symbols-outlined{
+    font-size: 40px !important;
+}
+
+.progress:hover{
+    border-color: yellow;
+    transition: all 1s;
+}
+h2{
+    text-align: center;
+    color: rgb(107, 106, 106) !important;
+}
+.container-3{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+.product-image{
+    display: block;
+    width: 100%;
+    height: 250px;
+    transition: 2s;
+    position: relative;
+}
+.cover-padding{
+    margin: -15px;
+    overflow: hidden;
+    position: relative;
+}
+.cover-padding::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgb(0,0,0,0.18); 
+    transition: 2s;
+}
+.cover-padding:hover>.product-image{
+    transform: scale(1.8);
+}
+.cover-padding:hover::after{
+    background-color: transparent;
+}
+.footer{
+    background-color: rgb(77, 76, 76); 
+    color:white;
+    text-align: center;
+    margin-top: 50px;
+
+}
+.go-top{
+    text-decoration: none;
+    text-align: center;
+    margin-left: auto;
+    margin-right: 0;
+    border: transparent;
+    border-radius: 50%;
+    width: 50px;
+    position: fixed;
+    bottom: 10px;
+    right: 3px;
+
+}
+.m1{
+    color: red;
+    font-size: 50px !important;
+
+}
+
+
+/* صفحه محصولات */
+
+
+h1{
+    text-align: center;
+    margin-top: 40px;
+}
+
+
+.container-4{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    align-content: center;
+}
+
+.product{
+   text-align: center;
+   border: 2px solid rgb(204, 199, 199);
+   border-radius: 10px;
+   align-items: center;
+   /* position: relative; */
+   justify-content: space-between;
+   min-width: 300px;
+   height: 150px;
+   display: flex;
+
+}
+
+.pro-image{
+    display: block;
+    width: 150px;
+    height: 130px;
+    margin-left: 5px;
+    
+}
+
+.container-4 a{
+text-decoration: none;
+}
+.text{
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    height: 150px;
+    /* width: 500px;  */
+    
+}
+.text-tit{
+ color: black;
+ font-size: 15px;
+margin-top : 0;
+margin-bottom : auto;
+ text-align: justify;
+padding: 5px;
+}
+.gheymat{
+    color: black;
+   color: rgb(114, 111, 111);
+   font-size: 13px;
+   padding: 8px;
+   margin-top:auto ;
+   margin-bottom: 0;
+  margin-left: auto;
+  margin-right: 0;
+}
+.search{
+    display: flex;
+    flex-direction: row;
+    border-radius: 7px;
+    border: 2px solid rgb(190, 188, 188);   
+    background-color: white;
+    max-width: 400px;
+    height: 40px;
+    padding: 2px ;
+    margin-top: -30px;
+    transform: translateX(-40%); 
+}
+ .search-box{
+    position: relative;
+   margin-top: auto;
+   margin-bottom: auto; 
+   border: none;
+ }
+#search-text{
+  position: relative;
+   background-color: transparent;
+    border: none;
+    width: 350px; 
+} 
+ input:focus{
+    outline: none;
+} 
+.material{
+    font-size: 20px !important;
+    color: rgb(150, 147, 147);
+   position: relative;
+   margin-top: auto;
+   margin-bottom: auto;
+}
+
+.right{
+   border: 2px solid rgb(199, 197, 197);
+   border-radius: 7px;
+  margin-top: 15px;
+}
+.right ul li{
+    list-style: none;
+    padding: 3px;
+    
+}
+.right ul li>a{
+    text-decoration: none;
+}
+.moratab{
+ text-align: center;
+ align-content: center;
+ justify-items: baseline;
+}
+.moratab-1{
+    display: inline-flex;
+    border: 2px solid rgb(199, 197, 197);
+    border-radius: 5px;  
+}
+.moratab-1 li{
+   
+    list-style: none;
+    padding: 10px;
+    margin-left: 10px;
+ 
+}
+.moratab-1 li>a{
+    text-decoration: none;
+}
+.arrow{
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.box{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box-menu{
+    display: flex;
+    width: 250px;
+    height: 50px;
+    border: 2px solid black;
+    justify-content: center;
+    align-items: center;
+   
+}
+.box .box-menu>a{
+    text-decoration: none;
+    padding: 5px;
+    color: black;
+}
+
+
+/* صفحه نظرات */
+
+
+
+.nazarat{
+    position: relative;
+   padding: 10px 20px;
+
+}
+#texterea{
+    width: 450px;
+    font-size: 15px;
+}
+.container-5{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    align-content: center;
+    direction: ltr;
+}
+.nazar-sherkat{
+    height: 100px;
+    position: relative;
+}
+.nazar{
+    width: 100%;
+    height: 2px;
+    background-color: rgb(196, 192, 192);
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.nazar-color{  
+    position: absolute;
+    width: 85%;
+    height: 6px;
+    background-color: blue;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.nazar-color::after{
+    content: '';
+    position: absolute;
+    display: block;
+    width: 10px;
+    height: 10px;
+    background-color: blue;
+    top: 50%;
+    left: 100%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+}
+.nazar-sherkat>p{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.nazar-color.na1{
+    width: 91%;
+    background-color: red;
+}
+.nazar-color.na1::after{
+    background-color: red;
+}
+.nazar-color.na2{
+    width: 78%;
+    background-color: green;
+}
+.nazar-color.na2::after{
+    background-color: green;
+}
+.button{
+    text-decoration: none;
+    background-color: rgb(162, 162, 250);
+    color: black;
+    display: block;
+    width: 130px;
+    line-height: 30px;
+    text-align: center;
+    box-shadow: 2px 2px 2px black;
+    font-size: 18px;
+    transition: all -2s;
+}
+.button:hover{
+    background-color: rgb(80, 80, 175);
+}
+.button:active{
+    transform: translate(2px,2px);
+     box-shadow: none
+} 
